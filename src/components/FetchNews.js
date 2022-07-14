@@ -6,7 +6,7 @@ function FetchNews() {
 
   //news api call using reactjs 
   const fetchNews = () => {
-    axios.get("https://newsapi.org/v2/everything?q=tesla&from=2022-06-13&sortBy=publishedAt&apiKey=68a89666a8344fabb9650969dd1ffa30")
+    axios.get("https://newsapi.org/v2/everything?q=tesla&from=2022-06-13&sortBy=publishedAt&apiKey={name}")
     .then((response) => {
        console.log(response);
       setNews(response.data.articles);
